@@ -1,0 +1,3 @@
+INSERT INTO CUSTOMER (id) VALUES
+(1),
+(2);
