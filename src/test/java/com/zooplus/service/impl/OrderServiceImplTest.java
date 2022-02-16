@@ -2,6 +2,7 @@ package com.zooplus.service.impl;
 
 
 import com.zooplus.dto.OrderDTO;
+import com.zooplus.mapper.OrderBalanceMapper;
 import com.zooplus.mapper.impl.OrderMapperImpl;
 import com.zooplus.model.Customer;
 import com.zooplus.model.Order;
@@ -35,6 +36,8 @@ class OrderServiceImplTest {
     private CustomerBalanceService customerBalanceService;
     @Mock
     private OrderMapperImpl orderMapper;
+    @Mock
+    private OrderBalanceMapper orderBalanceMapper;
 
 
     @Test

@@ -18,6 +18,9 @@ public class Order {
     @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
     private OrderBalance orderBalance;
 
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    private Payment payment;
+
     public Long getId() {
         return id;
     }
@@ -48,5 +51,13 @@ public class Order {
 
     public void setOrderBalance(OrderBalance orderBalance) {
         this.orderBalance = orderBalance;
+    }
+
+    public Payment getPayment() {
+        return payment;
+    }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
     }
 }

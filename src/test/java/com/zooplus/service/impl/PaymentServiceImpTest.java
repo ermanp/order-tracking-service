@@ -6,6 +6,7 @@ import com.zooplus.model.Customer;
 import com.zooplus.model.CustomerBalance;
 import com.zooplus.model.Order;
 import com.zooplus.model.OrderBalance;
+import com.zooplus.repository.PaymentRepository;
 import com.zooplus.service.CustomerBalanceService;
 import com.zooplus.service.OrderBalanceService;
 import com.zooplus.service.OrderService;
@@ -33,6 +34,9 @@ class PaymentServiceImpTest {
     private OrderService orderService;
     @Mock
     private CustomerBalanceService customerBalanceService;
+    @Mock
+    private PaymentRepository paymentRepository;
+
 
     @Test
     void test_makePayment() throws CustomerBalanceNotFoundException {
