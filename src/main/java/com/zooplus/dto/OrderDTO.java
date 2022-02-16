@@ -1,9 +1,16 @@
 package com.zooplus.dto;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "Order Data Transfer Object")
 public class OrderDTO {
 
+    @ApiModelProperty(required = false,value = "Order Id")
     private String orderId;
+    @ApiModelProperty(required = true,value = "Customer Id")
     private String customerId;
+    @ApiModelProperty(required = true,value = "Amount")
     private String amount;
 
     public OrderDTO() {
