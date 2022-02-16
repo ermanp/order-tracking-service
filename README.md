@@ -25,7 +25,7 @@ User Name: sa
 Password: password
 
 
-# About mannual testing
+# Manual Test
 
 Out of the Swagger, required results could be obtained by posting below curls respectively on Postman;
 
